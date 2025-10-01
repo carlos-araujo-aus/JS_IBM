@@ -5,7 +5,8 @@ const job = document.getElementById("job");
 const designation = document.getElementById("designation");
 const productType = document.getElementById("productType");
 const feedbackText = document.getElementById("feedbackText");
-
+const userExperience = document.getElementById("experienceText");
+const userNameExperience = document.getElementById("name");
 
 
 const submitFeedback = () => {
@@ -16,6 +17,8 @@ const submitFeedback = () => {
     document.getElementById("userDesignation").innerHTML = designation.value;
     document.getElementById("userProductChoice").innerHTML = productType.value;
     document.getElementById("userFeedback").innerHTML = feedbackText.value;
+    document.getElementById("userExperience").innerHTML = userExperience.value;
+    document.getElementById("userNameExperience").innerHTML = userNameExperience.value;
 
     document.getElementById("userInfo").style.display = "block";
     
