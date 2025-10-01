@@ -31,3 +31,33 @@ show();
 //console.log(functionVar); //Throws ReferenceError
 //console.log(functionLet); //Throws ReferenceError
 //console.log(functionConst); //Throws ReferenceError
+
+//Block Scope 2 - Redeclaration of variables 
+
+{
+    var blockVar2 = "Hello Var";
+    let blockLet2 = "Hello Let";
+    const blockConst2 = "Hello Const";
+
+    console.log(blockVar2);
+    console.log(blockLet2);
+    console.log(blockConst2);
+
+    //Redeclaration of variables
+    var blockVar2 = "Hello Var 2";
+    //let blockLet2 = "Hello Let 2"; //Throws SyntaxError
+    //const blockConst2 = "Hello Const 2"; //Throws SyntaxError
+
+    console.log(blockVar2);
+    //console.log(blockLet2);
+    //console.log(blockConst2);
+}
+
+//Global Scope 3 - Redeclaration of variables
+var blockVar2 = "Hello Var 3";
+let blockLet2 = "Hello Let 3";
+const blockConst2 = "Hello Const 3";
+
+console.log(blockVar2); //Output: Hello Var 3
+console.log(blockLet2); //Output: Hello Let 3
+console.log(blockConst2); //Output: Hello Const 3
