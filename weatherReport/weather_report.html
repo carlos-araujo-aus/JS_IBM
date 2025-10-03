@@ -8,9 +8,18 @@
 
   <form id="weatherForm">
     <label for="city" style="font-weight: bold;">Enter City:</label>
-    <input type="text" id="city" name="city">
-    <button type="submit" id="submitButton" style="font-weight: bold;">Get Weather</button>
+    <input type="text" id="city" name="city"><br>
+    <button type="submit" id="submitButton" style="font-weight: bold;">Get Weather</button><br><br>
   </form>
+
+  <form id="weatherForm2">
+    <label for="cityLat" style="font-weight: bold;">Enter Latitude:</label>
+    <input type="text" id="cityLat" name="cityLat"><br>
+    <label for="cityLon" style="font-weight: bold;">Enter Longitude:</label>
+    <input type="text" id="cityLon" name="cityLon"><br>
+    <button type="submit" id="submitBtnLatLon" style="font-weight: bold;">Get Weather</button>
+  </form>
+
 
   <div id="weatherInfo"></div>
 <script type="module" src="./weather_report.js"></script>
